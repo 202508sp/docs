@@ -1,4 +1,4 @@
-#import "../lib/config.typ": conf
+#import "../lib/conf.typ": conf
 
 #show: doc => conf(
     title: "「介護サポートのためのARグラス」仕様書",

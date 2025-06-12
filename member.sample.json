@@ -1,11 +1,15 @@
 {
+  "school": {
+    "jp": "hoge school",
+    "en": "Hoge School"
+  },
   "students": [
     {
-        "id": 1,
+        "class": "J3A",
         "name": "hoge"
     },
     {
-        "id": 2,
+        "class": "J3B",
         "name": "fuga"
     }
   ],
