@@ -4,12 +4,15 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "lint": "bunx textlint ./docs/specification/*.typ",
-    "lint:fix": "bunx textlint --fix ./docs/specification/*.typ"
+    "lint": "bunx textlint -c .textlintrc.handbook README.md handbook/**/*.md",
+    "lint:fix": "bunx textlint -c .textlintrc.handbook --fix README.md handbook/**/*.md",
+    "lint:typst": "bunx textlint -c .textlintrc ./docs/specification/*.typ",
+    "lint:typst:fix": "bunx textlint -c .textlintrc --fix ./docs/specification/*.typ"
   },
   "devDependencies": {
     "@types/bun": "latest",
     "textlint": "^14.4.2",
+    "textlint-plugin-markdown": "^4.0.6",
     "textlint-plugin-typst": "^1.1.2",
     "textlint-rule-period-in-list-item": "^1.0.1",
     "textlint-rule-preset-ja-spacing": "^2.4.3",
